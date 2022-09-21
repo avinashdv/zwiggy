@@ -1,0 +1,221 @@
+.restoDetailHeader {
+  width: 100%;
+  height: 250px;
+  background-color: #171a29;
+  color: white;
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.restoDetailHeaderContent {
+  width: 100%;
+  margin: 0 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  column-gap: 20px;
+}
+
+.restoDetailHeaderAbout > h1 {
+  font-size: 28px;
+  font-weight: 400;
+}
+
+.restoDetailHeaderAbout > p {
+  color: #a8a9ae;
+}
+
+.restoDetailHeaderXtras {
+  display: flex;
+  justify-content: space-between;
+}
+
+.restoDetailHeaderXtras > p {
+  font-weight: bold;
+  border-right: 1px solid hsla(0, 0%, 100%, 0.2);
+}
+
+.restoDetailHeaderXtras > p:first-child {
+  padding: 0 20px 0 0;
+}
+
+.restoDetailHeaderXtras > p:nth-child(2) {
+  padding: 0 20px;
+}
+
+.restoDetailHeaderXtras > p:last-child {
+  border: 0;
+  padding: 0 0 0 20px;
+}
+
+.restaurantXtrasInfo {
+  font-weight: bold;
+  font-size: 12px;
+  color: #a8a9ae;
+}
+
+.restoDetailHeaderOffers {
+  display: none;
+}
+
+.restoDetailHeaderOffers > h1 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.restoDetailHeaderAbout {
+  width: auto;
+  max-width: 400px;
+}
+
+.restoDetailBody {
+  width: auto;
+  margin: 0 auto;
+  padding: 14px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.restoType {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 0.5px solid #d4d5d9;
+  padding: 23px 0;
+}
+
+.restoMainContent h1 {
+  color: #282c3f;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.restoSideNav {
+  display: none;
+}
+
+.restoTypes {
+  cursor: pointer;
+  display: block;
+  margin: 1em 0;
+  text-decoration: none;
+  color: #282c3f;
+}
+
+.restoTypes:hover {
+  color: #fc8019;
+}
+
+.restoMainContent {
+  width: 80%;
+  padding: 0;
+}
+
+.restoMainContent > div {
+  border-bottom: 2px solid black;
+}
+.restoMainContent > div:last-child {
+  border: 0;
+}
+
+.restItemsAbout {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.restItemsAbout > p:nth-child(2) {
+  font-weight: 500;
+}
+
+.restItemsAbout > p:last-child {
+  font-weight: 400;
+}
+
+.restoItemsBgImg {
+  position: relative;
+}
+
+.restoBtn {
+  position: absolute;
+  background-color: #d4d5d9;
+  display: flex;
+  justify-content: space-between;
+  height: 30%;
+  border: 0.5px solid #d4d5d9;
+  width: 70%;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #60b246;
+  font-weight: bold;
+}
+
+.restoBtn:hover {
+  box-shadow: 0px 2px 2px 0.25px #e9e9eb;
+}
+
+.restoItemAdd {
+  width: 50%;
+  border: 0;
+  font-size: 18px;
+  cursor: pointer;
+  color: #0f8a65;
+  background-color: white;
+}
+
+.restoItemRemove {
+  width: 50%;
+  border: 0;
+  font-size: 18px;
+  cursor: pointer;
+  color: #0f8a65;
+  background-color: white;
+}
+
+.restoDetailHeaderBgImg {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .restoDetailHeaderBgImg {
+    display: block;
+  }
+
+  .restoDetailHeaderContent {
+    margin: 0 150px;
+  }
+
+  .restoDetailBody {
+    margin: 0 100px;
+  }
+
+  .restoSideNav {
+    display: block;
+    text-align: right;
+    padding-right: 24px;
+    border-right: 0.5px solid #d4d5d9;
+    position: sticky;
+    top: 250px;
+    height: 100vh;
+  }
+
+  .restoMainContent {
+    padding-left: 50px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .restoDetailHeaderOffers {
+    display: block;
+    border: 1px solid white;
+    padding: 26px;
+  }
+
+  .restoDetailBody {
+    margin: 0 230px;
+  }
+}

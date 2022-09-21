@@ -1,0 +1,14 @@
+.restaurants {
+  display: block;
+  row-gap: 10px;
+}
+
+@media (min-width: 576px) {
+  .restaurants {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-direction: row;
+    row-gap: 10px;
+  }
+}
